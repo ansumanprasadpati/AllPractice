@@ -1,0 +1,14 @@
+import java.io.FileInputStream;
+
+public class dataDriven {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		FileInputStream fis= new FileInputStream("C:\\Users\\ansuman.pati\\Desktop\\Dummy.xlsx");
+		XSSFWorkbook xWb=new XSSFWorkbook();
+
+	}
+
+}

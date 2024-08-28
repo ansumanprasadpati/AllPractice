@@ -1,0 +1,18 @@
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String actual_String="Ansuman";
+		String reversed_String=reversedString(actual_String);
+		System.out.println("New String is"+ reversed_String);
+
+	}
+	public static String reversedString(String str)
+	{
+		StringBuffer sb=new StringBuffer();
+		return sb.reverse().toString();
+	}
+	
+
+}

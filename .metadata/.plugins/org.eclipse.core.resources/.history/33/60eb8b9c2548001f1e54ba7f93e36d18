@@ -1,0 +1,19 @@
+package automation.pageObjects;
+
+import org.openqa.selenium.WebDriver;
+
+import automation.AbstractComponents.abstractCompo;
+
+public class checkOutPage extends abstractCompo{
+
+	public checkOutPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	public checkOutPage(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+	}
+
+
+}

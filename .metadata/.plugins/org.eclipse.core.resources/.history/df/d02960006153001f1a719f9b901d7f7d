@@ -1,0 +1,12 @@
+public class Volatile {
+	public static void main (String[] args) {
+    private volatile int count;
+
+    public void increment() {
+        count++;
+    }
+
+    public int getCount() {
+        return count;
+    }
+}

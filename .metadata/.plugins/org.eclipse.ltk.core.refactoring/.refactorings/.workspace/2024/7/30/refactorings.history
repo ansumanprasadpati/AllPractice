@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;SeleniumWithCucucumber-master_SeleniumWithCucucumber-master&apos;" deleteContents="false" description="Delete resource &apos;SeleniumWithCucucumber-master_SeleniumWithCucucumber-master&apos;" element1="/SeleniumWithCucucumber-master_SeleniumWithCucucumber-master" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1721891649567"/>
+</session>

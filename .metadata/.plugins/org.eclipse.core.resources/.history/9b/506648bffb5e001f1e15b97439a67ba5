@@ -1,0 +1,18 @@
+import java.util.ArrayList;
+
+public class ArrayListEX {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> al=new ArrayList<String>();
+		al.add("Ansuman");
+		al.add("java");
+		al.add("python");
+		al.add("cypress");
+		System.out.println(al);
+		al.remove(2);
+		System.out.println(al);
+
+	}
+
+}

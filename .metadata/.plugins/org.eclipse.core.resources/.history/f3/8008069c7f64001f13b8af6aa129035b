@@ -1,0 +1,12 @@
+public class HelloWorldWorldHello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="Hello World";
+		StringBuilder sb=new StringBuilder(str);
+		String rev=sb.reverse().toString();
+		System.out.println(str+" "+rev);
+
+	}
+
+}

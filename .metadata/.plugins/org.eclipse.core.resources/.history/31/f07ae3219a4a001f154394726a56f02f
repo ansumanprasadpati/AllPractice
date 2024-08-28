@@ -1,0 +1,16 @@
+package automation.testComponents;
+
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+
+public class Listeners implements ITestListener{
+	ExtentReport report=extent.getReport();
+	
+	@Override
+	public void onTestStart(ITestResult result)
+	{
+		extent.createTest(path);
+	}
+	
+
+}

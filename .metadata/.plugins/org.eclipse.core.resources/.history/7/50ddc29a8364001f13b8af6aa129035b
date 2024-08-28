@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class PrintInitialsOfName {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name="Enter a name: ";
+		Scanner sc=new Scanner(name);
+		sc.nextLine();
+
+	}
+
+}

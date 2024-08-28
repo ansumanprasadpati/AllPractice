@@ -1,0 +1,14 @@
+package automation.StepDefinition;
+
+import automation.testComponents.BaseClass;
+import io.cucumber.java.en.Given;
+
+public class StepDefinition extends BaseClass {
+	
+	@Given("I landed on the eCommerce homePage")
+	public void I_landed_on_the_eCommerce_homePage()
+	{
+		launchApp();
+	}
+
+}

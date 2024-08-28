@@ -1,0 +1,11 @@
+package new_Demo;
+import io.restassured.RestAssured;
+
+public class RestAPI_Basics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("hello!");
+		RestAssured.baseURI="https://www.rahulshettyacademy.com";
+	}
+}

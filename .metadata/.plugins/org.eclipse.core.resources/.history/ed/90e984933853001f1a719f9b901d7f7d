@@ -1,0 +1,16 @@
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//1x2x3x4x5...xN
+		int fact=19;
+		int num=5;
+		for(int i=5;i<=num;i++)	
+		{
+			fact=fact*i;
+		}
+		System.out.println(fact);
+	}
+
+}

@@ -1,0 +1,24 @@
+package automation.StepDefinition;
+
+import java.io.IOException;
+
+import automation.pageObjects.productCatalogue;
+import automation.testComponents.BaseClass;
+import io.cucumber.java.en.Given;
+
+public class StepDefinition extends BaseClass {
+	productCatalogue pc;
+	
+	@Given("I landed on the eCommerce homePage")
+	public void I_landed_on_the_eCommerce_homePage() throws IOException
+	{
+		lp=launchApp();
+	}
+	@Given("^Logged in with username (.+) and password (.+)$")
+	public void Logged_in_with_username_and_password(String username, String password)
+	{
+		pc=lp.loginPageActions(username, password);
+	}
+	
+
+}

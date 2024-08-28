@@ -1,0 +1,49 @@
+package automation.StepDefinition;
+
+import java.io.IOException;
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+
+import automation.pageObjects.cartPage;
+import automation.pageObjects.checkOutPage;
+import automation.pageObjects.confirmationPage;
+import automation.pageObjects.productCatalogue;
+import automation.testComponents.BaseClass;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+
+public class StepDefinition extends BaseClass {
+	productCatalogue pc;
+	checkOutPage cop;
+	confirmationPage conP;
+	
+	@Given("I landed on the eCommerce homePage")
+	public void I_landed_on_the_eCommerce_homePage() throws IOException
+	{
+		lp=launchApp();
+	}
+	@Given("^Logged in with username (.+) and password (.+)$")
+	public void Logged_in_with_username_and_password(String username, String password)
+	{
+		pc=lp.loginPageActions(username, password);
+	}
+	@When("^I add product (.+) to the cart$")
+	public void I_add_product_to_the_cart(String productName)
+	{
+		List<WebElement> products = pc.listOfProducts();
+		pc.addProdtoCart(productName);
+	}
+	@And("^Go to checkout with the product (.+) and submit the order$")
+	public void Go_to_checkout_with_the_product_and_submit_the_order(String productName)
+	{
+		cartPage cp = lp.goToCart();
+		cp.cartItemsList(productName);
+		cop = cp.checkOutButton();
+		cop.enterCountry();
+		cop.selectCountryFromList();
+		conP = cop.submitOrder();
+	}
+
+}

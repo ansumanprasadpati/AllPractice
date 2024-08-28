@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;pojo_serialization&apos; to &apos;APIFramework/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;Oauth2&apos;&#x0D;&#x0A;- Destination element: &apos;APIFramework/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;Oauth2/src/pojo_serialization&apos;" description="Copy package" destination="=APIFramework/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;pojo_serialization" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1714459462752" version="1.0"/>
+</session>

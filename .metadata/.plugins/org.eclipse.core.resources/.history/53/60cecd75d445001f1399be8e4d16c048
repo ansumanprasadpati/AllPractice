@@ -1,0 +1,14 @@
+package automation.AbstractComponents;
+
+import org.openqa.selenium.WebDriver;
+
+public class abstractCompo{
+
+	WebDriver driver;
+	public abstractCompo(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+		
+	}
+	
+
+}

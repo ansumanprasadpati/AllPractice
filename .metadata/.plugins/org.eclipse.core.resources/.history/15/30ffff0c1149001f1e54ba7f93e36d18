@@ -1,0 +1,32 @@
+package automation.pageObjects;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import automation.AbstractComponents.abstractCompo;
+
+	public class orderPage extends abstractCompo{
+
+		WebDriver driver;
+		public orderPage(WebDriver driver) {
+			super(driver);
+			this.driver=driver;
+			PageFactory.initElements(driver, this);
+		}
+		@FindBy(css=".cartSection h3")
+		List<WebElement> cartItems; 
+		@FindBy(css=".totalRow button")
+		WebElement productTitles;
+		
+		public Boolean cartItemsList(String prodName)
+		{
+			Boolean match=cartItems.stream().anyMatch(product->product.getText().equalsIgnoreCase(prodName));
+			return match;
+		}
+
+}
+}

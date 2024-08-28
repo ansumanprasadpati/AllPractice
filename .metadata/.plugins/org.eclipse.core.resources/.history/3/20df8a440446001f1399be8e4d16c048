@@ -1,0 +1,27 @@
+package automation.AbstractComponents;
+
+import java.util.List;
+
+import org.bouncycastle.oer.its.ieee1609dot2.basetypes.Duration;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class abstractCompo{
+
+	WebDriver driver;
+	public abstractCompo(WebDriver driver) {
+		this.driver=driver;
+	}
+	
+	public void elementToAppear(By by)
+	{
+		WebDriverWait w= new WebDriverWait(driver, java.time.Duration.ofSeconds(5));
+		w.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
+		
+	}
+	
+
+}

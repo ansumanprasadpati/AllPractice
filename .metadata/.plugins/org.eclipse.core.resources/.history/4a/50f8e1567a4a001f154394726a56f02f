@@ -1,0 +1,14 @@
+package automation.dataSet;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+
+public class dataReader {
+	public void getJsonDataToMap()
+	{
+		//read external JSON and convert it to String
+		FileUtils.readFileToString(new File(System.getProperty("user.dir")+"\\test\\java\\automation\\dataSet\\purchaseOrder.json"))
+	}
+
+}

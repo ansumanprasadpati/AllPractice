@@ -1,0 +1,5 @@
+package automation.pageObjects;
+
+public class checkOutPage {
+
+}

@@ -1,0 +1,17 @@
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String actual_String="Ansuman";
+		reversedString(String str)
+		{
+			StringBuilder sb=new StringBuilder();
+			sb.reverse().toString();
+		}
+		
+		
+
+	}
+
+}

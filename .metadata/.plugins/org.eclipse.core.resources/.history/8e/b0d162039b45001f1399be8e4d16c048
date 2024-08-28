@@ -1,0 +1,10 @@
+package automation.pageObjects;
+
+public class LandingPage {
+	
+	public void LandingPage(driver)
+	{
+		this.driver=driver;
+	}
+
+}

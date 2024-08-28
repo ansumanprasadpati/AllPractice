@@ -1,0 +1,19 @@
+package automation.pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import automation.AbstractComponents.abstractCompo;
+
+public class confirmationPage extends abstractCompo{
+	
+	WebDriver driver;
+
+	public confirmationPage(WebDriver driver) {
+		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+		// TODO Auto-generated constructor stub
+	}
+
+}

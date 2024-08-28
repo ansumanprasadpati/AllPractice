@@ -1,0 +1,17 @@
+package automation.dataSet;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
+public class dataReader {
+	public void getJsonDataToMap() throws IOException
+	{
+		//read external JSON and convert it to String
+		String jsonData=FileUtils.readFileToString(new File(System.getProperty("user.dir")+"src//test//java//automation//dataSet//purchaseOrder.json"));
+		//string to HashMap
+		
+	}
+
+}

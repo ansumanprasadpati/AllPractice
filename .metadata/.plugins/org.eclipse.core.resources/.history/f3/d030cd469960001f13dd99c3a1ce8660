@@ -1,0 +1,11 @@
+import java.util.HashSet;
+
+public class FindDuplicatesInArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr= {3,5,2,2,4,1,4,5};
+		HashSet hs=new HashSet();
+	}
+
+}

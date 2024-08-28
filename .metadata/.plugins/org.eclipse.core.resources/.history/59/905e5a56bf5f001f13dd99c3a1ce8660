@@ -1,0 +1,16 @@
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class RemoveDuplicates {
+    public static void main(String[] args) {
+        String[] arrayWithDuplicates = {"apple", "banana", "apple", "orange", "banana", "grape"};
+
+        // Removing duplicates using stream
+        String[] arrayWithoutDuplicates = Stream.of(arrayWithDuplicates)
+                                                .distinct()
+                                                .toArray(String[]::new);
+
+        // Printing the array without duplicates
+        System.out.println("Array without duplicates: " + Arrays.toString(arrayWithoutDuplicates));
+    }
+}

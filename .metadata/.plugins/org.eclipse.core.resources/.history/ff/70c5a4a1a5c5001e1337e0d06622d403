@@ -1,0 +1,39 @@
+package FIles;
+
+import org.testng.annotations.Test;
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import static io.restassured.RestAssured.*;
+
+import java.util.Scanner;
+
+public class DynamicJson {
+	
+	Scanner sc=new Scanner(System.in);
+	String isbn;
+	String aisle;
+	String id;
+	System.out.println("Enter your isbn:"+isbn);
+	System.out.println("Enter your aisle:"+aisle);
+	@Test
+	public void addBook()
+	{
+		RestAssured.baseURI="http://216.10.245.166";
+		String Add_Book=given().log().all().header("Content-type","application/json")
+				.body(payloadBody.addBook(isbn,aisle))
+		.when().post("/Library/Addbook.php")
+		.then().assertThat().statusCode(200).extract().response().asString();
+		JsonPath js=ReUsableMethods.RawtoJson(Add_Book);
+		js.get("ID");
+		System.out.println(id);
+	}
+	public void deleteBook()
+	{
+		RestAssured.baseURI="http://216.10.245.166";
+		given().log().all().header("Content-type", "application/json")
+		.body(payloadBody.deleteBook(id))
+		.when().delete("/Library/DeleteBook.php")
+		.then().assertThat().statusCode(200);
+	}
+
+}

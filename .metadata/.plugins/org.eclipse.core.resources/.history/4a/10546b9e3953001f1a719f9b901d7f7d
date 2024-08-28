@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class CheckForPrime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n;
+		String str;
+		Scanner sc=new Scanner(str);
+		sc.nextLine();
+		System.out.println("Enter a number:");
+
+	}
+
+}

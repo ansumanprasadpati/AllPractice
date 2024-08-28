@@ -1,0 +1,37 @@
+package automation;
+
+import java.io.IOException;
+import java.time.Duration;
+import java.util.List;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import automation.pageObjects.LandingPage;
+import automation.pageObjects.cartPage;
+import automation.pageObjects.checkOutPage;
+import automation.pageObjects.confirmationPage;
+import automation.pageObjects.productCatalogue;
+import automation.testComponents.BaseClass;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class placeOrderTest extends BaseClass {
+
+	@Test
+	public void placeOrder() throws IOException, InterruptedException {
+
+		String prodName = "ZARA COAT 3";
+		productCatalogue pc = lp.loginPageActions("ansu@xyz.com", "Ansuman1@3");
+		List<WebElement> products = pc.listOfProducts();
+		pc.addProdtoCart(prodName);
+		cartPage cp = lp.goToCart();
+		cp.cartItemsList(prodName);
+		checkOutPage cop = cp.checkOutButton();
+		cop.enterCountry();
+		cop.selectCountryFromList();
+		confirmationPage conP = cop.submitOrder();
+		String getMessage = conP.confirmMessage();
+		// Assert.assertTrue(pName);
+		Assert.assertTrue(getMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+	}
+
+}

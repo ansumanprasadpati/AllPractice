@@ -1,0 +1,18 @@
+
+public class Pallindrome {
+
+	public static boolean main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="Ansuman";
+		
+		StringBuilder sb= new StringBuilder(str);
+		StringBuilder reversed_String=sb.reverse();
+		//System.out.println(reversed_String);
+		
+		return str.equals(reversed_String);
+		
+		
+
+	}
+
+}

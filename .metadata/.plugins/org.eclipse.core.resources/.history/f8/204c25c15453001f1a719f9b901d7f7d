@@ -1,0 +1,17 @@
+
+public class Pallindrome {
+
+	public static void main(String[] args) {
+		System.out.println(isPalindrome());
+		
+	}
+	public static boolean isPalindrome()
+	{
+	String str= "Ansuman";
+	StringBuilder sb= new StringBuilder(str);
+	sb.reverse();
+	//System.out.println(reversed_String);
+	
+	}
+
+}

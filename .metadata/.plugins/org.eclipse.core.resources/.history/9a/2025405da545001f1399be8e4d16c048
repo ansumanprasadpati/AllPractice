@@ -1,0 +1,19 @@
+package automation.pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class LandingPage {
+	WebDriver driver;
+	public LandingPage(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+	
+	
+	//driver.get("https://rahulshettyacademy.com/client/");
+	WebElement userEmail=driver.findElement(By.id("userEmail"));
+	WebElement userPassword=driver.findElement(By.id("userPassword"));
+	//WebElement loginButton=driver.findElement(By.name("login")).click();
+}

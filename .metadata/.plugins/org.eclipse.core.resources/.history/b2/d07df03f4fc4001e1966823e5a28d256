@@ -1,0 +1,10 @@
+package FIles;
+import io.restassured.RestAssured;
+import org.testng.annotations.Test;
+
+@Test
+public class DynamicJson {
+	RestAssured.baseURI= "http://216.10.245.166";
+	
+
+}
